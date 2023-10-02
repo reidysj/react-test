@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import "./styles.scss";
 
-const CART_DATA = [
+type CartItem = {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+};
+
+const CART_DATA: CartItem[] = [
   {
     id: 1,
     name: "Apple iPhone 12 Pro",
